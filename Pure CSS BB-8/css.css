@@ -153,3 +153,128 @@ body{
 	-moz-animation: moveclouds 30s linear infinite;
 	-o-animation: moveclouds 30s linear infinite;
 }
+
+.sand{
+  background-color:#f6d7b0;
+  top:120px;
+  height:400px;
+  width:400px;
+  position: absolute;
+}
+
+.sand:before{
+  content: '';
+  position: absolute;
+  width:400px;
+  height:100px;
+  top:-10px;
+  left:-150px;
+  border-radius:50%;
+  background-color:#f6d7b0;
+  -webkit-animation: movesand 15s linear infinite;
+	-moz-animation: movesand 15s linear infinite;
+	-o-animation: movesand 15s linear infinite;
+}
+.sand:after{
+  content:'';
+  position:absolute;
+  width:400px;
+  height:100px;
+  top:-10px;
+  left:150px;
+  border-radius:50%;
+  background-color:#f6d7b0;
+  -webkit-animation: movesand 15s linear infinite;
+	-moz-animation: movesand 15s linear infinite;
+	-o-animation: movesand 15s linear infinite;
+}
+
+.body_shadow{
+  background-color: gray;
+  width:190px;
+  height:25px;
+  border-radius:50%;
+  position: absolute;
+  top:164px;
+  transform:rotate(-3deg);
+  left:180px;
+  opacity:0.5;
+}
+
+.antenna_1{
+  height:40px;
+  width:2px;
+  background-color:black;
+  position: absolute;
+  top:-100px;
+  left:90px;
+}
+.line_1{
+  width:500px;height:100px;
+  border:solid 2px gray;
+  border-color:gray transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+  position:absolute;
+  top:30px;
+  left:-100px;
+  transform:rotate(-35deg);
+    opacity:0.5;
+}
+
+.line_2{
+  width:500px;height:100px;
+  border:solid 2px gray;
+  border-color:gray transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+  position:absolute;
+  top:80px;
+  left:-200px;
+  transform:rotate(55deg);
+  opacity:0.5;
+}
+
+.eye{
+  background-color:black;
+  height:35px;
+  width:35px;
+  border-radius:50%;
+  left:17px;
+  top:-40px;
+  position:absolute;
+  overlap:hidden;
+  border:1px solid white;
+  border-style:inset;
+}
+
+.eye_overlap{
+  z-index:11;
+  background-color:black;
+  border:2px solid gray;  
+  height:30px;
+  width:35px;
+  border-radius:50%;
+  left:-27px;
+  top:24px;
+  position:absolute;
+}
+
+.small_circle{
+  position: absolute;
+  height:5px;
+  width:5px;
+  border:2px solid black;
+  top:59px;
+  left:-10px;
+  border-radius:50%;
+}
+
+.shine{
+  position: absolute;
+  height:50px;
+  width:50px;
+  border-radius:50%;
+  background-color:white;
+  opacity:0/7;
+  left:-45px;
+  top:-15px;
+}
